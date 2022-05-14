@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface SimpleApi {
 
-    @GET("posts/1")
+    @GET("no")
     suspend fun getLocations(): Location
 
 }
