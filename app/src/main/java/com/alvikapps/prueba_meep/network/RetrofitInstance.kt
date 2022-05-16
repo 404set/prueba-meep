@@ -1,4 +1,4 @@
-package com.alvikapps.prueba_meep.api
+package com.alvikapps.prueba_meep.network
 
 import com.alvikapps.prueba_meep.utils.Contants.Companion.BASE_URL
 import retrofit2.Retrofit
@@ -11,7 +11,7 @@ object RetrofitInstance {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-    val api: SimpleApi by lazy{
-        retrofit.create(SimpleApi::class.java)
+    val api: MeepApi by lazy{
+        retrofit.create(MeepApi::class.java)
     }
 }

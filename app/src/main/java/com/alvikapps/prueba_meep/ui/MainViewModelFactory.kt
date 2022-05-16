@@ -9,5 +9,4 @@ class MainViewModelFactory(val repository: Repository): ViewModelProvider.Factor
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return MainViewModel(repository) as T
     }
-
 }
